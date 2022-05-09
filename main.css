@@ -1,0 +1,683 @@
+/* INICIO DE LA PAG */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    box-sizing: border-box !important;
+}
+.navegador-uno {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('imagenes/header.jpg');
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 700px;
+    padding: 0;
+}
+
+.logo {
+    max-width: 300px;
+    max-height: 100px;
+}
+
+nav p {
+    margin-top: 0;
+    margin-bottom: 1000px;
+    padding: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+nav img {
+    max-width: 320px;
+    max-height: 200px;
+    padding: 0px;
+    margin-left: 10px !important;
+}
+.btn {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+ 
+}
+
+.encabezado-info {
+    max-width: 100%;
+    max-height: 450px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.texto-uno {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 130px;
+    padding: 0px 50px;
+    margin-left: 130px;
+    color: black;
+    text-align: end;
+}
+
+.texto-dos {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 140px;
+    margin-right: 40px;
+    color: rgb(111, 108, 108);
+}
+
+.conocenos {
+    background-image: url('imagenes/imagenestetica.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    max-height: 500px;
+    padding: 60px 0;
+}
+
+.conocenos-uno {
+    display: flex;
+    justify-content: center;
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: rgb(70, 70, 70);
+    font-size: 24px;
+
+    margin-top: 60px;
+
+}
+
+.conocenos-dos {
+    display: flex;
+    justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.637);
+    text-align: center;
+}
+
+.ubi-titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    font-size: 13px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.ubi-titulo-dos {
+    display: flex;
+    justify-content: center;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.info-uno h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.info-uno p {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    padding: 0;
+    margin: 0;
+}
+
+.info-dos p {
+    padding: 0;
+    margin: 0;
+}
+
+.info-general {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen-ubi {
+    max-width: 500px;
+    background-color: rgba(255, 239, 218, 0.511);
+    padding: 30px 70px;
+}
+
+.info-uno {
+    margin-top: 200px;
+    text-align: left;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 20px;
+    color: gray;
+    margin-left: 150px;
+}
+
+.info-uno a {
+    text-decoration: none;
+    color: black;
+}
+
+.info-uno p {
+    padding: 3px;
+}
+
+.info-uno h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 22px;
+    color: black;
+}
+
+.redes-final {
+    margin-top: 80px ;
+    padding: 0px 50px;
+    margin-left: 50px;
+    color: black;
+    text-align: center;
+}
+
+.redes {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 14px !important;
+    display: inline-block;
+    padding: 50px;
+    margin-inline: 30px;
+}
+
+.redes a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.footer {
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+    max-height: 300px;
+    background-color: rgb(44, 44, 44);
+    margin-top: 120px;
+    padding: 50px;
+}
+
+.redes-logos {
+    padding: 0px 50px;
+    margin-top: 60px;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.footer p {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+/* PAG CONTACTOS */
+
+.navegador-dos {
+    display: flex;
+    justify-content: space-center;
+    height: 500px;
+    background-image: url('imagenes/contactofondo.png');
+    background-position: center;
+}
+
+.navegador-dos img {
+    width: 260px;
+    height: 160px;
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 200px;
+}
+
+
+.navegador-dos div ul li {
+    margin-top: 40px;
+
+}
+
+.p-gabinete {
+    margin-top: 150px;
+    margin-bottom: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 13px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 252px;
+    color: black;
+}
+
+.p-contacto {
+    margin-bottom: 0;
+    margin-left: 210px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    color: black;
+}
+
+.mapa-google {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(230, 199, 199, 0.292);
+}
+.mapa-google iframe {
+    transition: transform .9s;
+}
+
+.mapa-google iframe:hover {
+    transform: scale(0.9);
+}
+.contacto-info-general {
+    padding: 0px 100px;
+}
+
+.info-contacto {
+    margin: 160px 0px;
+    text-align: left;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.mapa-google iframe {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.info-contacto a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+.info-contacto p {
+    padding: 3px;
+    margin: 0;
+}
+
+.info-contacto h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+.info-contacto h3 span {
+    margin: 10px;
+    font-size: 13px;
+}
+
+.num-wsp:hover {
+    color: rgb(232, 168, 235);
+}
+
+/* PAG TRATAMIENTOS */
+
+.navegador-tres {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.navegador-tres img {
+    width: 260px;
+    height: 160px;
+    padding: 0px;
+    margin-left: 20px;
+}
+
+.navegador-tres div ul li {
+    margin-top: 60px;
+    font-family: 'Mulish', sans-serif;
+}
+.navegador-dos div ul li a {
+    color: rgb(79, 79, 79);
+}
+.navegador-tres div ul li a {
+    color: rgb(79, 79, 79);
+}
+
+.tratamientos-sub {
+    background-color: rgba(102, 100, 100, 0.073);
+    height: 150px;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tratamientos-sub h2 {
+    margin-top: 0px;
+    margin-left: 70px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 30px;
+}
+
+.breadcrumb {
+    margin-top: 7px;
+    margin-left: 150px;
+}
+
+.breadcrumb-item {
+    font-size: 18px;
+}
+.breadcrumb-item a {
+    font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+
+.tratamientos-cont {
+    background-color: rgba(230, 199, 199, 0.292);
+}
+
+.facial {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+}
+
+.facial h2 {
+    text-align: center;
+    padding: 0px;
+    margin-top: 230px;
+    margin-left: 100px;
+    font-size: 40px;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 0;
+}
+
+.facial h2 p {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    border: 2px solid black;
+    margin-bottom: 0;
+}
+
+.facial h2 p a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.corporal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.corporal h2 {
+    text-align: center;
+    padding: 0px;
+    margin-top: 230px;
+    margin-right: 230px;
+    font-size: 40px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.corporal h2 p {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    border: 2px solid black;
+}
+
+.corporal h2 p a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+/* PAG TURNOS */
+
+.p-contacto-dos {
+    margin-bottom: 0;
+    margin-left: 230px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    color: black;
+}
+
+.turnos {
+    width: 700px;
+    height: 410px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.594);
+    padding: 20px 30px;
+    font-family: 'Teko', sans-serif;
+}
+
+.turnos h3 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+
+.solic-turno {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.solic-turno button {
+    width: 50%;
+}
+/* PAG NOSOTROS */
+
+.nosotros {
+    width: 700px;
+    height: 250px;
+    background-color: rgba(250, 235, 215, 0.678);
+    margin: auto;
+    padding: 20px 50px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+}
+
+.nosotros div p {
+    color: black;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.nosotros h3 {
+    font-size: 30px;
+    margin: 5px;
+}
+
+.nosotros p {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* FINAL */
+
+
+/* ANIMACIONES */
+
+
+nav img {
+    transition: transform .2s;
+}
+
+nav img:hover {
+    transform: scale(1.1);
+}
+.conocenos-uno {
+    transition: transform .2s;
+}
+
+.conocenos-uno:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.3);
+}
+.card {
+    transition: transform .2s;
+}
+.card:hover {
+    transform: scale(1.2);
+}
+
+.redes-final a {
+    transition: transform .2s;
+}
+
+.redes-final a:hover {
+    transform: scale(1.5);
+    color: rgb(215, 155, 197);
+}
+
+
+.facial h2 p {
+    transition: transform .4s;
+}
+
+.facial h2 p:hover {
+    transform: scale(0.9);
+}
+
+.corporal h2 p {
+    transition: transform .4s;
+}
+
+.corporal h2 p:hover {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+/* GRID */
+
+.main-wrapper {
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "header"
+    "conocenos"
+    "ubi-titulogral"
+    "info-uno"
+    "redes-final"
+    "footer"
+    ;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+.conocenos {
+    grid-area: conocenos;
+}
+
+.ubi-titulogral {
+    grid-area: ubi-titulogral;
+}
+
+.info-uno {
+    grid-area: info-uno;
+}
+
+.redes-final {
+    grid-area: redes-final;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+.main-wrapper-dos {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "redes-final"
+    "footer"
+    ;
+}
+
+main {
+    grid-area: main;
+}
+
+.main-wrapper-tres {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "tratamientos-sub"
+    "tratamientos-cont"
+    "footer"
+    ;
+}
+
+.tratamientos-sub {
+    grid-area: tratamientos-sub;
+}
+
+.tratamientos-cont {
+    grid-area: tratamiento-cont;
+}
+
+.main-wrapper-cuatro {
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "turnos"
+    "redes-final"
+    "footer"
+    ;
+}
+
+.turnos {
+    grid-area: turnos;
+}
+
+
+.main-wrapper-cinco {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "nosotros"
+    "footer"
+    ;
+}
+
+.nosotros {
+    grid-area: nosotros;
+}
