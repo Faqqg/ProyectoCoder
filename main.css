@@ -4,18 +4,16 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-.container {
-    box-sizing: border-box !important;
-}
+
+
 .navegador-uno {
-    display: flex;
-    justify-content: space-between;
+
     background-image: url('imagenes/header.jpg');
     background-size: cover;
     background-position-y: center;
     background-attachment: fixed;
     height: 700px;
-    padding: 0;
+
 }
 
 .logo {
@@ -44,19 +42,20 @@ nav img {
     color: #ffffff;
     margin-bottom: 4px;
 }
+
+nav ul {
+margin-left: 400px;
+}
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 40px;
-    font-family: 'Mulish', sans-serif;
-    font-size: 20px;
-    margin-top: 70px;
+    font-size: 23px;
+    margin-top: 10px;
+    padding: 15px;
+    font-family: 'Mulish', sans-serif !important;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
- 
+.collapse ul li a {
+    color: rgb(58, 58, 58) !important;
+
 }
 
 .encabezado-info {
@@ -209,10 +208,8 @@ table {
 }
 
 .footer {
-    display: inline-block;
     text-align: center;
     max-width: 100%;
-    max-height: 300px;
     background-color: rgb(44, 44, 44);
     margin-top: 120px;
     padding: 50px;
@@ -235,19 +232,16 @@ table {
 /* PAG CONTACTOS */
 
 .navegador-dos {
-    display: flex;
-    justify-content: space-center;
     height: 500px;
     background-image: url('imagenes/contactofondo.png');
     background-position: center;
 }
 
 .navegador-dos img {
-    width: 260px;
-    height: 160px;
+    max-width: 260px;
+    max-height: 160px;
     padding: 0px;
-    margin-left: 20px;
-    margin-right: 200px;
+
 }
 
 
@@ -257,19 +251,20 @@ table {
 }
 
 .p-gabinete {
+
     margin-top: 150px;
     margin-bottom: 0;
     font-family: 'Mulish', sans-serif;
     font-size: 13px;
     display: inline-block;
     text-align: center;
-    margin-left: 252px;
+    margin-left: 745px;
     color: black;
 }
 
 .p-contacto {
     margin-bottom: 0;
-    margin-left: 210px;
+    margin-left: 700px;
     font-family: 'Mulish', sans-serif;
     font-size: 42px;
     color: black;
@@ -417,6 +412,7 @@ table {
     font-family: 'Mulish', sans-serif;
     border: 2px solid black;
     margin-bottom: 0;
+    width: 100%;
 }
 
 .facial h2 p a {
@@ -440,6 +436,7 @@ table {
 
 .corporal h2 p {
     text-align: center;
+    width: 100%;
     padding: 25px;
     margin-top: 30px;
     font-size: 15px;
@@ -680,4 +677,273 @@ main {
 
 .nosotros {
     grid-area: nosotros;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+
+    .texto-uno {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    padding: 20px 20px;
+    margin: 50px 0px;
+    color: black;
+    text-align: end;
+}
+
+.texto-dos {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    margin: 110px 0px;
+    color: rgb(111, 108, 108);
+}
+
+
+.navegador-uno {
+    background-image: url('imagenes/header-mobile.jpg');
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    max-width: 100%;
+    max-height: 700px;
+    padding: 0;
+}
+nav ul {
+    margin-left: 0;
+}
+.nav-item {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item a {
+    color: white !important;
+}
+
+
+nav img {
+    max-width: 260px;
+    max-height: 230px;
+    padding: 0px;
+    margin-left: 10px !important;
+}
+
+.btn {
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 0px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+ 
+}
+
+
+
+
+.info-general {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card {
+    margin-top: 50px !important;
+}
+.imagen-ubi {
+
+    background-color: rgba(255, 239, 218, 0.511);
+    padding: 0;
+}
+
+.info-uno {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    text-align: center;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 20px;
+    color: gray;
+    margin: 0;
+}
+
+.info-uno a {
+    text-decoration: none;
+    color: black;
+}
+
+.info-uno p {
+    padding: 3px;
+}
+
+.info-uno h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 22px;
+    color: black;
+}
+
+.redes-final {
+    padding: 0px !important;
+    margin-left: 0px !important;
+}
+
+
+
+
+
+.navegador-tres {
+    display: flex;
+    justify-content: space-between;
+    max-height: 300px !important;
+    background-color: #ffffff;
+}
+
+.navegador-tres div ul li {
+    margin-top: 60px;
+    font-family: 'Mulish', sans-serif;
+}
+.navegador-dos div ul li a {
+    color: rgb(79, 79, 79);
+}
+.navegador-tres div ul li a {
+    color: rgb(79, 79, 79);
+}
+
+.tratamientos-sub {
+    background-color: rgba(102, 100, 100, 0.073);
+    height: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tratamientos-sub h2 {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 30px;
+}
+
+.breadcrumb {
+    margin: auto;
+    margin-left: 20px;
+}
+
+.breadcrumb-item {
+    font-size: 15px;
+}
+.breadcrumb-item a {
+    font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+
+.tratamientos-cont {
+    background-color: rgba(230, 199, 199, 0.292);
+
+ 
+}
+.facial {
+    margin: auto;
+    padding: 0px;
+}
+.col-facial {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.col-corporal {
+    display: flex;
+    flex-direction: column;
+}
+.facial h2 {
+    text-align: center;
+    padding: 0px;
+    margin-top: 40px !important;
+    font-size: 40px;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 0;
+    margin-left: 0 !important;
+}
+
+.facial h2 p {
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    border: 2px solid black;
+    margin-left: 26px !important;
+    width: 280px !important;
+}
+
+.facial h2 p a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.corporal {
+ flex-direction: column;
+
+}
+
+.img-trat {
+    padding: 0;
+    margin: 0px !important;
+    max-width: 85%;
+    max-height: 85%;
+    margin-left: 30px !important;
+}
+
+.corporal h2 {
+    text-align: center;
+    padding: 0px;
+    margin-top: 20px;
+    margin-right: 0;
+    font-size: 40px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.corporal h2 p {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    border: 2px solid black;
+}
+
+.corporal h2 p a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+
 }

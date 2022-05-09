@@ -24,34 +24,48 @@
 
     <div class="main-wrapper-tres">
         <div class="container" style="padding: 0; max-width: 100%;">
-            <div class="row">
-                <nav class="navegador-tres">
-                    <div class="col">
-                        <a href="../index.html"><img src="../imagenes/loguito.png" alt="logo de la pagina"></a>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="../index.html"><b>Inicio</b></a></li>
-                             <li>
-                            <div class="dropdown">
-                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                <b> Tratamientos </b>
-                                </a>
-                              
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <li style="margin: 5px;"><a class="dropdown-item" href="tratamientos.html">Facial</a></li>
-                                  <li style="margin: 5px;"><a class="dropdown-item" href="tratamientos.html">Corporal</a></li>
+               
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="../index.html"><img src="../imagenes/loguito.png"
+                                    class="animate__animated animate__pulse" alt="logo de la pagina"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Tratamientos
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="tratamientos.html">Corporal</a></li>
+                                            <li><a class="dropdown-item" href="tratamientos.html">Facial</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="turnos.html">Turnos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contacto.html">Contacto</a>
+                                    </li>
                                 </ul>
-                              </div>
-                            </li>
-                            <li><a href="turnos.html"><b>Turnos</b></a></li>
-                            <li><a href="contacto.html"><b> Contacto</b></a></li>
-                            <li><a href="nosotros.html"><b> Nosotros</b></a></li>
-                        </ul>
-                    </div>
-                </nav>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+    
             </div>
-            <div class="row">
+       
                 <main>
                     <section class="tratamientos-sub">
                         <div class="col-9">
@@ -68,18 +82,18 @@
                     </section>
 
                     <section class="tratamientos-cont">
-                        <div class="col" style="display: flex; justify-content: space-between;">
+                        <div class="col-facial" style="display: flex; justify-content: space-between;">
                             <div class="facial">
                                 <h2> Faciales
                                     <p><a href="">VER TRATAMIENTOS</a></p>
                                 </h2>
                             </div>
-                            <img src="../imagenes/facial.jpg" alt="imagen de tratamiento facial">
+                            <img src="../imagenes/facial.jpg" class="img-trat" alt="imagen de tratamiento facial">
                         </div>
 
-                        <div class="col" style="display: flex; justify-content: space-between;">
+                        <div class="col-corporal" style="display: flex; justify-content: space-between;">
                             <div class="corporal">
-                                <img src="../imagenes/corporal.jpg" style="margin-right: 300px;"
+                                <img src="../imagenes/corporal.jpg" class="img-trat" style="margin-right: 300px;"
                                     alt="imagen de tratamiento corporal">
                                 <h2>Corporal
                                     <p><a href="">VER TRATAMIENTOS</a></p>
@@ -89,8 +103,8 @@
 
                     </section>
                 </main>
-            </div>
-            <div class="row">
+        
+          
                 <footer class="footer">
                     <div class="col">
                         <p><b>Donde Encontrarnos</b></p>
@@ -99,7 +113,7 @@
                         <p>Tel : 3364443323</p>
                     </div>
                 </footer>
-            </div>
+
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
