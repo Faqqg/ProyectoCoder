@@ -26,122 +26,145 @@
         <div class="container" style="padding: 0; max-width: 100%;">
             <div class="row">
                 <nav class="navegador-dos">
-                    <a href="../index.html"><img src="../imagenes/loguito.png" alt="logo de la pagina"></a>
-                    <div>
-                        <ul>
-                            <li><a href="../index.html"><b>Inicio</b></a></li>
-                            <li>
-                                <div class="dropdown">
-                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <b> Tratamientos </b>
-                                    </a>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="../index.html"><img src="../imagenes/loguito.png"
+                                    class="animate__animated animate__pulse" alt="logo de la pagina"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-lg-0">
+                                    <li class="nav-item" style="margin: 0px;">
+                                        <a class="nav-link active" style="padding: 2px;" aria-current="page"
+                                            href="../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item dropdown" style="margin: 0px;">
+                                        <a class="nav-link dropdown-toggle" style="padding: 2px;" href="#"
+                                            id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Tratamientos
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" style="margin: 0px;"
+                                                    href="tratamientos.html">Corporal</a></li>
+                                            <li><a class="dropdown-item" style="margin: 0px;"
+                                                    href="tratamientos.html">Facial</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item" style="margin: 0px;">
+                                        <a class="nav-link" style="padding: 2px;" href="turnos.html">Turnos</a>
+                                    </li>
+                                    <li class="nav-item" style="margin: 0px;">
+                                        <a class="nav-link" style="padding: 2px;" href="nosotros.html">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item" style="margin: 0px;">
+                                        <a class="nav-link" style="padding-bottom: 35px; padding-top: 0px;"
+                                            href="contacto.html">Contacto</a>
+                                    </li>
 
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <li style="margin: 5px;"><a class="dropdown-item"
-                                                href="tratamientos.html">Facial</a></li>
-                                        <li style="margin: 5px;"><a class="dropdown-item"
-                                                href="tratamientos.html">Corporal</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="turnos.html"><b>Turnos</b></a></li>
-                            <li><a href="contacto.html"><b> Contacto</b></a></li>
-                            <li><a href="nosotros.html"><b> Nosotros</b></a></li>
-                        </ul>
-                        <div class="animate__animated animate__fadeInDown">
-                            <p class="p-gabinete">
-                                G A B I N E T E
-                            </p>
+                                </ul>
 
-                            <p class="p-contacto-dos"><b>
-                                    Turnos
-                                </b>
-                            </p>
+                            </div>
+
                         </div>
+
+                    </nav>
+                    <div class="animate__animated animate__fadeInDown">
+                        <p class="p-gabinete">
+                            G A B I N E T E
+                        </p>
+
+                        <p class="p-contacto-dos"><b>
+                                Turnos
+                            </b>
+                        </p>
                     </div>
-                </nav>
-            </div>
-
-            <div class="row">
-                <main>
-                    <div class="col">
-                        <section class="turnos">
-                            <h3>Solicitar turno</h3>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">Email</label>
-                            </div>
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingPassword" placeholder="Nombre">
-                                <label for="floatingPassword">Nombre y apellido</label>
-                            </div>
-                            <div class="form-floating">
-                                <input type="text" class="form-control" style="margin-top: 20px;" id="floatingPassword"
-                                    placeholder="Nombre">
-                                <label for="floatingPassword">Numero de teléfono</label>
-                            </div>
-
-
-                            <!-- Button trigger modal -->
-                            <div class="solic-turno">
-                                <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    Solicitar turno
-                                </button>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel"><b> Splendia Estética </b>
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Tu turno ha sido registrado, en 48hs nos contáctaremos via Whatsapp e Email,
-                                            para confirmar dia y horario.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary"
-                                                data-bs-dismiss="modal">Entendido.</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                        </section>
-                    </div>
-                    <div class="col">
-                        <section class="redes-final">
-                            <h3 class="redes">ÚNETE <br><a href="https://www.facebook.com/"  target="blank"><b>Facebook</b></a></h3>
-
-                            <h3 class="redes">SIGUENOS <br><a href="https://www.instagram.com/"  target="blank"><b>Instagram</b></a>
-                            </h3>
-                        </section>
-                    </div>
-                </main>
-            </div>
-            <div class="row">
-                <footer class="footer">
-                    <div class="col">
-                        <p><b>Donde Encontrarnos</b></p>
-                        <p>19 oeste 685 piso 2 A - San Nicolas De Los Arroyos</p>
-                        <p><b>Para saber más</b></p>
-                        <p>Tel : 3364443323</p>
-                    </div>
-                </footer>
             </div>
 
         </div>
+
+        <div class="row">
+            <main>
+                <div class="col">
+                    <section class="turnos">
+                        <h3>Solicitar turno</h3>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Nombre">
+                            <label for="floatingPassword">Nombre y apellido</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" style="margin-top: 20px;" id="floatingPassword"
+                                placeholder="Nombre">
+                            <label for="floatingPassword">Numero de teléfono</label>
+                        </div>
+
+
+                        <!-- Button trigger modal -->
+                        <div class="solic-turno">
+                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Solicitar turno
+                            </button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel"><b> Splendia Estética </b>
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Tu turno ha sido registrado, en 48hs nos contáctaremos via Whatsapp e Email,
+                                        para confirmar dia y horario.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Entendido.</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="redes-final">
+                        <h3 class="redes">ÚNETE <br><a href="https://www.facebook.com/"
+                                target="blank"><b>Facebook</b></a></h3>
+
+                        <h3 class="redes">SIGUENOS <br><a href="https://www.instagram.com/"
+                                target="blank"><b>Instagram</b></a>
+                        </h3>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <div class="row">
+            <footer class="footer">
+                <div class="col">
+                    <p><b>Donde Encontrarnos</b></p>
+                    <p>19 oeste 685 piso 2 A - San Nicolas De Los Arroyos</p>
+                    <p><b>Para saber más</b></p>
+                    <p>Tel : 3364443323</p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
     </div>
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
