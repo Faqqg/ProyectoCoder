@@ -718,7 +718,7 @@ main {
 
 
     .navegador-uno {
-        background-image: none;
+        background-image: url('imagenes/header-mobile.jpg');
         background-size: auto;
         background-position-x: center;
         max-width: 100%;
