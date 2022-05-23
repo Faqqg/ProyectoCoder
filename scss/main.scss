@@ -1,3 +1,43 @@
+
+
+// VARIABLES
+$color-primary: white;
+$color-secondary: black;
+
+
+// IMPORT
+@import "nav";
+@import "footer";
+
+// MAPS
+$redes: (
+    instagram:#ff7300 ,
+    facebook: #0000bf ,
+    whatsapp: #008000,
+);
+
+
+@each $red,
+$color in $redes {
+    .red-#{$red} {
+        color: $color;
+    }
+}
+
+
+
+// MIXINS
+@mixin size ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+
+// OPERACIONES
+$spacing: 5px;
+
+
+
 /* INICIO DE LA PAG */
 body {
     margin: 0;
@@ -6,87 +46,52 @@ body {
 }
 
 
-.navegador-uno {
-
-    background-image: url('imagenes/header.jpg');
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    height: 700px;
-
-}
-
-.logo {
-    max-width: 300px;
-    max-height: 100px;
-}
-
-nav p {
-    margin-top: 0;
-    margin-bottom: 1000px;
-    padding: 0;
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 14px;
-    color: white;
-}
-
-nav img {
-    max-width: 320px;
-    max-height: 200px;
-    padding: 0px;
-    margin-left: 10px !important;
-}
-
 .btn {
     font-family: 'Mulish', sans-serif;
     font-size: 20px;
-    color: #ffffff;
+    color: $color-primary;
     margin-bottom: 4px;
 }
 
-nav ul {
-    margin-left: 400px;
+
+.collapse {
+    ul {
+        li {
+            a {
+                color: rgb(58, 58, 58) !important;
+            }
+        }
+    }
 }
 
-nav ul li {
-    font-size: 23px;
-    margin-top: 10px;
-    padding: 15px;
-    font-family: 'Mulish', sans-serif !important;
-}
-
-.collapse ul li a {
-    color: rgb(58, 58, 58) !important;
-
-}
 
 .encabezado-info {
-    max-width: 100%;
-    max-height: 450px;
-    background-color: rgb(255, 255, 255);
+    @include size (450px, 100%);
+    background-color: $color-primary;
     display: flex;
 }
 
 .texto-uno {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 30px;
-    margin-top: 130px;
+    margin-top: 140px;
     padding: 0px 50px;
+    margin-bottom: 200px;
     margin-left: 130px;
-    color: black;
+    color: $color-secondary;
     text-align: end;
 }
 
 .texto-dos {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 20px;
-    margin-top: 140px;
-    margin-right: 40px;
+    margin-top: 170px;
+    margin-right: $spacing*8;
     color: rgb(111, 108, 108);
 }
 
 .conocenos {
-    background-image: url('imagenes/imagenestetica.jpg');
+    background-image: url('../imagenes/imagenestetica.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -100,8 +105,7 @@ nav ul li {
     font-family: 'Quattrocento Sans', sans-serif;
     color: rgb(70, 70, 70);
     font-size: 24px;
-
-    margin-top: 60px;
+    margin-top: $spacing*12;
 
 }
 
@@ -110,7 +114,7 @@ nav ul li {
     justify-content: center;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 40px;
-    color: white;
+    color: $color-primary;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.637);
     text-align: center;
 }
@@ -131,36 +135,34 @@ nav ul li {
     margin-top: 0px;
 }
 
-.info-uno h3 {
-    padding: 0;
-    margin: 0;
-}
-
-.info-uno p {
-    padding: 0;
-    margin: 0;
-}
 
 table {
     padding: 0;
     margin: 0;
 }
 
-.info-dos p {
-    padding: 0;
-    margin: 0;
+.info-dos {
+    p {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .info-general {
-    padding: 50px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
 }
 
 .imagen-ubi {
-    max-width: 500px;
+    max-width: 100px;
     background-color: rgba(255, 239, 218, 0.511);
     padding: 30px 70px;
+}
+
+.card-dos {
+    width: 500px;
+    margin-right: 50px;
 }
 
 .info-uno {
@@ -170,28 +172,35 @@ table {
     font-size: 20px;
     color: gray;
     margin-left: 150px;
+
+    h3 {
+        padding: 0;
+        margin: 0;
+      
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 22px;
+            color: $color-secondary;
+      
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-secondary;
+    }
 }
 
-.info-uno a {
-    text-decoration: none;
-    color: black;
-}
 
-.info-uno p {
-    padding: 3px;
-}
-
-.info-uno h3 {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 22px;
-    color: black;
-}
 
 .redes-final {
     margin-top: 80px;
     padding: 0px 50px;
     margin-left: 50px;
-    color: black;
+    color: $color-secondary;
     text-align: center;
 }
 
@@ -201,56 +210,18 @@ table {
     display: inline-block;
     padding: 50px;
     margin-inline: 30px;
+
+    a {
+        color: $color-secondary;
+        text-decoration: none;
+        font-size: 30px;
+    }
 }
 
-.redes a {
-    color: black;
-    text-decoration: none;
-    font-size: 30px;
-}
 
-.footer {
-    text-align: center;
-    max-width: 100%;
-    background-color: rgb(44, 44, 44);
-    margin-top: 120px;
-    padding: 50px;
-}
-
-.redes-logos {
-    padding: 0px 50px;
-    margin-top: 60px;
-    max-width: 40px;
-    max-height: 40px;
-}
-
-.footer p {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 20px;
-    color: white;
-    padding: 10px;
-}
 
 /* PAG CONTACTOS */
 
-.navegador-dos {
-    height: 500px;
-    background-image: url('imagenes/contactofondo.png');
-    background-position: center;
-}
-
-.navegador-dos img {
-    max-width: 260px;
-    max-height: 160px;
-    padding: 0px;
-
-}
-
-
-.navegador-dos div ul li {
-    margin-top: 40px;
-
-}
 
 .p-gabinete {
     margin-top: 150px;
@@ -259,7 +230,7 @@ table {
     font-size: 13px;
     align-items: center;
     text-align: center;
-    color: black;
+    color: $color-secondary;
 }
 
 .p-contacto {
@@ -267,17 +238,19 @@ table {
     margin-left: 700px;
     font-family: 'Mulish', sans-serif;
     font-size: 42px;
-    color: black;
+    color: $color-secondary;
 }
 
 .mapa-google {
     display: flex;
     justify-content: space-evenly;
     background-color: rgba(230, 199, 199, 0.292);
-}
 
-.mapa-google iframe {
-    transition: transform .9s;
+    iframe {
+        transition: transform .9s;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
 }
 
 .mapa-google iframe:hover {
@@ -294,67 +267,34 @@ table {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 20px;
     color: gray;
+    a {
+        text-decoration: none;
+        color: $color-secondary;
+        margin: 0;
+    }
+
+    p {
+        padding: 3px;
+        margin: 0;
+    }
+
+    h3 {
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 25px;
+        color: $color-secondary;
+        span {
+            margin: 10px;
+            font-size: 13px;
+        }
+    }
 }
 
-.mapa-google iframe {
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-.info-contacto a {
-    text-decoration: none;
-    color: black;
-    margin: 0;
-}
-
-.info-contacto p {
-    padding: 3px;
-    margin: 0;
-}
-
-.info-contacto h3 {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 25px;
-    color: black;
-}
-
-.info-contacto h3 span {
-    margin: 10px;
-    font-size: 13px;
-}
 
 .num-wsp:hover {
     color: rgb(232, 168, 235);
 }
 
 /* PAG TRATAMIENTOS */
-
-.navegador-tres {
-    display: flex;
-    justify-content: space-between;
-    height: 150px;
-    background-color: #ffffff;
-}
-
-.navegador-tres img {
-    width: 260px;
-    height: 160px;
-    padding: 0px;
-    margin-left: 20px;
-}
-
-.navegador-tres div ul li {
-    margin-top: 60px;
-    font-family: 'Mulish', sans-serif;
-}
-
-.navegador-dos div ul li a {
-    color: rgb(79, 79, 79);
-}
-
-.navegador-tres div ul li a {
-    color: rgb(79, 79, 79);
-}
 
 .tratamientos-sub {
     background-color: rgba(102, 100, 100, 0.073);
@@ -364,13 +304,13 @@ table {
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
-}
 
-.tratamientos-sub h2 {
-    margin-top: 0px;
-    margin-left: 70px;
-    font-family: 'Mulish', sans-serif;
-    font-size: 30px;
+    h2 {
+        margin-top: 0px;
+        margin-left: 70px;
+        font-family: 'Mulish', sans-serif;
+        font-size: 30px;
+    }
 }
 
 .breadcrumb {
@@ -380,14 +320,14 @@ table {
 
 .breadcrumb-item {
     font-size: 18px;
+
+    a {
+        font-family: 'Mulish', sans-serif;
+        text-decoration: none;
+        color: $color-secondary;
+    }
 }
 
-.breadcrumb-item a {
-    font-family: 'Mulish', sans-serif;
-    text-decoration: none;
-    color: black;
-
-}
 
 .tratamientos-cont {
     background-color: rgba(230, 199, 199, 0.292);
@@ -397,62 +337,66 @@ table {
     display: flex;
     justify-content: space-between;
     padding-left: 200px;
+
+    h2 {
+        text-align: center;
+        padding: 0px;
+        margin-top: 230px;
+        margin-left: 100px;
+        font-size: 40px;
+        font-family: 'Mulish', sans-serif;
+        margin-bottom: 0;
+
+        p {
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+            font-size: 15px;
+            font-family: 'Mulish', sans-serif;
+            border: 2px solid $color-secondary;
+            margin-bottom: 0;
+            width: 100%;
+
+            a {
+                text-decoration: none;
+                color: $color-secondary;
+            }
+        }
+    }
 }
 
-.facial h2 {
-    text-align: center;
-    padding: 0px;
-    margin-top: 230px;
-    margin-left: 100px;
-    font-size: 40px;
-    font-family: 'Mulish', sans-serif;
-    margin-bottom: 0;
-}
 
-.facial h2 p {
-    text-align: center;
-    padding: 25px;
-    margin-top: 30px;
-    font-size: 15px;
-    font-family: 'Mulish', sans-serif;
-    border: 2px solid black;
-    margin-bottom: 0;
-    width: 100%;
-}
 
-.facial h2 p a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
+
 
 .corporal {
     display: flex;
     justify-content: space-between;
+    h2 {
+        text-align: center;
+        padding: 0px;
+        margin-top: 230px;
+        margin-right: 230px;
+        font-size: 40px;
+        font-family: 'Mulish', sans-serif;
+
+        p {
+            text-align: center;
+            width: 100%;
+            padding: 25px;
+            margin-top: 30px;
+            font-size: 15px;
+            font-family: 'Mulish', sans-serif;
+            border: 2px solid black;
+            a {
+                text-decoration: none;
+                color: $color-secondary;
+            }
+        }
+    }
 }
 
-.corporal h2 {
-    text-align: center;
-    padding: 0px;
-    margin-top: 230px;
-    margin-right: 230px;
-    font-size: 40px;
-    font-family: 'Mulish', sans-serif;
-}
 
-.corporal h2 p {
-    text-align: center;
-    width: 100%;
-    padding: 25px;
-    margin-top: 30px;
-    font-size: 15px;
-    font-family: 'Mulish', sans-serif;
-    border: 2px solid black;
-}
-
-.corporal h2 p a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
 
 
 /* PAG TURNOS */
@@ -463,38 +407,41 @@ table {
     text-align: center;
     font-family: 'Mulish', sans-serif;
     font-size: 42px;
-    color: black;
+    color: $color-secondary;
 }
 
 
 .turnos {
     width: 700px;
     height: 410px;
-    background-color: rgb(255, 255, 255);
+    background-color: $color-primary;
     margin: auto;
     box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.594);
     padding: 20px 30px;
     font-family: 'Teko', sans-serif;
+
+    h3 {
+        margin: 0;
+        text-align: center;
+        height: 40px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid;
+        font-size: 20px;
+    }
 }
 
-.turnos h3 {
-    margin: 0;
-    text-align: center;
-    height: 40px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid;
-    font-size: 20px;
-}
 
 .solic-turno {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+
+    button {
+        width: 50%;
+    }
 }
 
-.solic-turno button {
-    width: 50%;
-}
+
 
 /* PAG NOSOTROS */
 
@@ -507,22 +454,48 @@ table {
     margin-top: 100px;
     text-align: center;
     font-family: 'Teko', sans-serif;
+
+    p {
+        font-family: 'Mulish', sans-serif;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    div {
+        p {
+            color: $color-secondary;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    
 }
 
-.nosotros div p {
-    color: black;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
+// FACIAL
+
+.titulo-facial {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(207, 191, 170);
+    color: white;
+    padding: 40px;
 }
 
-.nosotros h3 {
-    font-size: 30px;
-    margin: 5px;
+.cartas-facial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(207, 191, 170);
+    padding: 30px;
 }
 
-.nosotros p {
-    font-family: 'Mulish', sans-serif;
+.card {
+    margin: 30px;
+    padding: 3px;
 }
 
 /* FINAL */
@@ -544,7 +517,7 @@ nav img:hover {
 }
 
 .conocenos-uno:hover {
-    color: rgb(0, 0, 0);
+    color: $color-secondary;
     transform: scale(1.3);
 }
 
@@ -718,7 +691,7 @@ main {
 
 
     .navegador-uno {
-        background-image: url('imagenes/header-mobile.jpg');
+        background-image: url('../imagenes/header-mobile.jpg');
         background-size: auto;
         background-position-x: center;
         max-width: 100%;
@@ -727,17 +700,42 @@ main {
     }
 
     .conocenos {
-        background-image: url('imagenes/imagenestetica.jpg');
+        background-image: url('../imagenes/imagenestetica.jpg');
         background-position-x: center;
         background-size: auto;
         max-height: 100%;
         padding: 60px 0;
     }
 
+    nav {
+        ul {
+            margin-left: 0;
+            li {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-right: 0px;
+                font-family: 'Mulish', sans-serif;
+                font-size: 15px;
+                margin-top: 0px;
+                padding: 0px;
+                a {
+                    text-decoration: none;
+                    color: white;
+            
+                }
+            }
+        }
 
-    nav ul {
-        margin-left: 0;
+        img {
+            max-width: 180px;
+            max-height: 180px;
+            padding: 0px;
+            margin-left: 10px !important;
+        }
     }
+ 
 
     .nav-item {
         display: flex;
@@ -746,19 +744,13 @@ main {
         margin-top: 0;
         font-size: 20px;
         text-align: center;
+
+        a {
+            color: white !important;
+        }
     }
 
-    .nav-item a {
-        color: white !important;
-    }
 
-
-    nav img {
-        max-width: 180px;
-        max-height: 180px;
-        padding: 0px;
-        margin-left: 10px !important;
-    }
 
     .btn {
         font-family: 'Mulish', sans-serif;
@@ -767,25 +759,6 @@ main {
         margin-bottom: 4px;
     }
 
-    nav ul li {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-right: 0px;
-        font-family: 'Mulish', sans-serif;
-        font-size: 15px;
-        margin-top: 0px;
-        padding: 0px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-
-    }
-
-
 
     .info-general {
         display: flex;
@@ -793,8 +766,15 @@ main {
         flex-direction: column;
     }
 
-    .card {
+    .card-dos {
         margin-top: 50px !important;
+        width: 300px;
+        margin-right: 0px;
+    }
+
+    .imagenn {
+        display: flex;
+        justify-content: center;
     }
 
     .imagen-ubi {
@@ -812,21 +792,22 @@ main {
         font-size: 20px;
         color: gray;
         margin: 0;
-    }
 
-    .info-uno a {
-        text-decoration: none;
-        color: black;
-    }
+        a {
+            text-decoration: none;
+            color: black;
+        }
 
-    .info-uno p {
-        padding: 3px;
-    }
+        p {
+            padding: 3px;
+        }
 
-    .info-uno h3 {
-        font-family: 'Quattrocento Sans', sans-serif;
-        font-size: 22px;
-        color: black;
+        h3 {
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 22px;
+            color: black;
+        }
+    
     }
 
     .redes-final {
@@ -834,20 +815,21 @@ main {
         margin-left: 0px !important;
     }
 
-
-
-
-
     .navegador-tres {
         display: flex;
         justify-content: space-between;
         max-height: 300px !important;
         background-color: #ffffff;
-    }
 
-    .navegador-tres div ul li {
-        margin-top: 60px;
-        font-family: 'Mulish', sans-serif;
+        div {
+            ul {
+                li {
+                    margin-top: 60px;
+                    font-family: 'Mulish', sans-serif;
+                }
+            }
+        }
+    
     }
 
     .navegador-dos div ul li a {
@@ -867,14 +849,16 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        h2 {
+            margin-top: 50px;
+            margin-left: 20px;
+            font-family: 'Mulish', sans-serif;
+            font-size: 30px;
+        }
     }
 
-    .tratamientos-sub h2 {
-        margin-top: 50px;
-        margin-left: 20px;
-        font-family: 'Mulish', sans-serif;
-        font-size: 30px;
-    }
+
 
     .breadcrumb {
         margin: auto;
@@ -883,14 +867,15 @@ main {
 
     .breadcrumb-item {
         font-size: 15px;
+
+        a {
+            font-family: 'Mulish', sans-serif;
+            text-decoration: none;
+            color: black;
+        }
+    
     }
 
-    .breadcrumb-item a {
-        font-family: 'Mulish', sans-serif;
-        text-decoration: none;
-        color: black;
-
-    }
 
     .tratamientos-cont {
         background-color: rgba(230, 199, 199, 0.292);
@@ -901,6 +886,33 @@ main {
     .facial {
         margin: auto;
         padding: 0px;
+
+        h2 {
+            text-align: center;
+            padding: 0px;
+            margin-top: 40px !important;
+            font-size: 40px;
+            font-family: 'Mulish', sans-serif;
+            margin-bottom: 0;
+            margin-left: 0 !important;
+
+            p {
+                text-align: center;
+                padding: 25px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 15px;
+                font-family: 'Mulish', sans-serif;
+                border: 2px solid black;
+                margin-left: 26px !important;
+                width: 280px !important;
+                a {
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                }
+            
+            }
+        }
     }
 
     .col-facial {
@@ -914,36 +926,32 @@ main {
         flex-direction: column;
     }
 
-    .facial h2 {
-        text-align: center;
-        padding: 0px;
-        margin-top: 40px !important;
-        font-size: 40px;
-        font-family: 'Mulish', sans-serif;
-        margin-bottom: 0;
-        margin-left: 0 !important;
-    }
-
-    .facial h2 p {
-        text-align: center;
-        padding: 25px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 15px;
-        font-family: 'Mulish', sans-serif;
-        border: 2px solid black;
-        margin-left: 26px !important;
-        width: 280px !important;
-    }
-
-    .facial h2 p a {
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-    }
 
     .corporal {
         flex-direction: column;
 
+        h2 {
+            text-align: center;
+            padding: 0px;
+            margin-top: 20px;
+            margin-right: 0;
+            font-size: 40px;
+            font-family: 'Mulish', sans-serif;
+
+            p {
+                text-align: center;
+                padding: 25px;
+                margin-top: 30px;
+                font-size: 15px;
+                font-family: 'Mulish', sans-serif;
+                border: 2px solid black;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
     }
 
     .img-trat {
@@ -954,29 +962,7 @@ main {
         margin-left: 30px !important;
     }
 
-    .corporal h2 {
-        text-align: center;
-        padding: 0px;
-        margin-top: 20px;
-        margin-right: 0;
-        font-size: 40px;
-        font-family: 'Mulish', sans-serif;
-    }
-
-    .corporal h2 p {
-        text-align: center;
-        padding: 25px;
-        margin-top: 30px;
-        font-size: 15px;
-        font-family: 'Mulish', sans-serif;
-        border: 2px solid black;
-    }
-
-    .corporal h2 p a {
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-    }
-
+ 
 
     .p-contacto-dos {
         margin-bottom: 0;
@@ -999,14 +985,14 @@ main {
 
     .navegador-dos {
         max-height: 800px !important;
+        img {
+            max-width: 170px;
+            max-height: 180px;
+            padding: 0px;
+            margin-left: 10px !important;
+        }
     }
 
-    .navegador-dos img {
-        max-width: 170px;
-        max-height: 180px;
-        padding: 0px;
-        margin-left: 10px !important;
-    }
 
     .redes-final {
         display: flex;
@@ -1034,22 +1020,18 @@ main {
         margin-top: 100px;
         text-align: center;
         font-family: 'Teko', sans-serif;
+        h3 {
+            font-size: 17px;
+        }
+
+        p {
+
+            font-size: 10px !important;
+            max-width: 100%;
+    
+        }
 
     }
-
-    .nosotros h3 {
-        font-size: 17px;
-    }
-
-    .nosotros p {
-
-        font-size: 10px !important;
-        max-width: 100%;
-
-    }
-
-
-
 
 
     .p-contacto {
@@ -1070,12 +1052,15 @@ main {
         justify-content: center;
 
         background-color: rgba(230, 199, 199, 0.292);
+
+        iframe {
+            transition: transform .9s;
+            max-width: 80%;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
     }
 
-    .mapa-google iframe {
-        transition: transform .9s;
-        max-width: 80%;
-    }
 
     .mapa-google iframe:hover {
         transform: scale(0.9);
@@ -1096,11 +1081,29 @@ main {
     }
 
 
-    .mapa-google iframe {
-        margin-top: 50px;
-        margin-bottom: 100px;
+    // FACIAL
+
+    .titulo-facial {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(207, 191, 170);
+        color: white;
+        padding: 10px;
     }
-
-
+    
+    .cartas-facial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(207, 191, 170);
+        padding: 20px;
+    }
+    
+    .card {
+        margin: 100px;
+        padding: 3px;
+    }
 
 }
