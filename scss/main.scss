@@ -691,7 +691,7 @@ main {
 
 
     .navegador-uno {
-        background-image: url('../imagenes/header-mobile.jpg');
+        background-image: url('../imagenes/fondoresponsive.jpg');
         background-size: auto;
         background-position-x: center;
         max-width: 100%;
@@ -700,11 +700,13 @@ main {
     }
 
     .conocenos {
-        background-image: url('../imagenes/imagenestetica.jpg');
-        background-position-x: center;
-        background-size: auto;
+        background-image: url('../imagenes/fondoresponsive2.jpg');
         max-height: 100%;
         padding: 60px 0;
+        background-attachment: none;
+        background-position: none;
+        background-size: none;
+
     }
 
     nav {
