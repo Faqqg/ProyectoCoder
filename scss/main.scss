@@ -705,6 +705,17 @@ main {
         padding: 0;
     }
 
+    .navbar-toggler {
+        background-color: #f1aed7ad;
+    }
+
+    .collapse ul li a {
+        color: rgb(10, 10, 10) !important;
+        -webkit-text-stroke: 0.2px rgba(255, 255, 255, 0) !important;
+        text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.788) !important;
+    }
+
+
     .conocenos {
         background-image: url('../imagenes/imagenestetica2.jpg');
         max-height: 50%;
