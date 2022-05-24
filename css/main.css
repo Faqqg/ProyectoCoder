@@ -129,7 +129,8 @@ body {
   height: 450px;
   width: 100%;
   background-color: white;
-  display: flex; }
+  display: flex;
+  padding: 10px; }
 
 .texto-uno {
   font-family: 'Plus Jakarta Sans', sans-serif;

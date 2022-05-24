@@ -67,6 +67,7 @@ body {
     @include size (450px, 100%);
     background-color: $color-primary;
     display: flex;
+    padding: 10px;
 }
 
 .texto-uno {
