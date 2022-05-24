@@ -185,7 +185,8 @@ body {
   justify-content: center;
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: 40px;
-  margin-top: 0px; }
+  margin-top: 0px;
+  margin-bottom: 100px; }
 
 table {
   padding: 0;
@@ -569,11 +570,12 @@ main {
     max-height: 700px;
     padding: 0; }
   .conocenos {
-    background-image: url("../imagenes/imagenestetica.jpg");
-    background-position-x: center;
-    background-size: auto;
+    background-image: url("../imagenes/fondoresponsivee2.jpg");
     max-height: 100%;
-    padding: 60px 0; }
+    padding: 60px 0;
+    background-attachment: none;
+    background-position: none;
+    background-size: none; }
   nav ul {
     margin-left: 0; }
     nav ul li {
@@ -603,6 +605,16 @@ main {
     text-align: center; }
     .nav-item a {
       color: white !important; }
+  .ubi-titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    font-family: 'Quattrocento Sans', sans-serif; }
+  .ubi-titulo-dos {
+    margin-top: 0px;
+    margin-bottom: 50px; }
   .btn {
     font-family: 'Mulish', sans-serif;
     font-size: 15px;
@@ -818,7 +830,8 @@ main {
     justify-content: center;
     background-color: #cfbfaa;
     color: white;
-    padding: 10px; }
+    padding-top: 50px;
+    padding-bottom: 0px; }
   .cartas-facial {
     display: flex;
     flex-direction: column;
