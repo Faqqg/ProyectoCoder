@@ -572,7 +572,7 @@ main {
     padding: 0; }
   .conocenos {
     background-image: url("../imagenes/imagenestetica2.jpg");
-    max-height: 100%;
+    max-height: 50%;
     padding: 60px 0;
     background-attachment: none;
     background-position: none;
