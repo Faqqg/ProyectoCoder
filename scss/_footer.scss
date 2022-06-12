@@ -6,16 +6,63 @@ $spacing: 5px;
     max-width: 100%;
     background-color: rgb(44, 44, 44);
     margin-top: 120px;
-    padding: $spacing*10;
+    padding: $spacing*20;
 
     p {
-        font-family: 'Quattrocento Sans', sans-serif;
-        font-size: 20px;
-        color: white;
-        padding: $spacing*2;
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin: 5px 0px;
+      
     }
 }
 
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    
+    h4 {
+        font-size: 24px;
+        text-align: left;
+        font-family: 'Quattrocento Sans', sans-serif;
+        color: white;
+
+    }
+}
+
+.form-control {
+    
+    background-color: rgba(44, 44, 44, 0.231) !important;
+    color: rgb(194, 194, 194);
+}
+.animation-footer p a{
+    transition: color 0.3s;
+    text-decoration: none;
+    color: white;
+}
+.animation-footer p a:hover {
+    color: rgb(130, 130, 130);
+}
+
+.redes-footer a img {
+    width: 45px;
+    height: 45px;
+    color: white;
+    padding: 7px;
+    margin-right: 62px;
+    transition: transform 0.2s;
+}
+.redes-footer a img:hover {
+    transform: scale(1.2);
+
+}
+
+.icon-footer {
+    width: 90px;
+    height: 85px;
+    margin-top: 20px;
+}
 
 .red-instagram {
     display: inline-block;
@@ -63,3 +110,4 @@ $spacing: 5px;
         padding: $spacing*2;
     }
 }
+

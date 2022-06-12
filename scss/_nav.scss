@@ -1,115 +1,134 @@
 // OPERACIONES
 $spacing: 5px;
 
-.navegador-uno {
+// .navegador-uno {
 
-    background-image: url('../imagenes/header.jpg');
+//     background-image: url('../imagenes/header.jpg');
+//     background-size: cover;
+//     background-position-y: center;
+//     background-attachment: fixed;
+//     height: 700px;
+
+// }
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(rgb(255, 255, 255), 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 450ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 450ms ease-in-out;
+  width: 90%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 90%;
+}
+
+
+
+
+
+.navegador-uno {
+    background-color: rgb(255, 237, 244);
+    height: 110px;
+    margin: 14px 0px;
+}
+
+.navbar {
+    padding: 0px;
+    height: 100px;
+}
+
+.navegador-dos div ul li {
+    margin-top: 0px !important;
+    
+}
+
+.header-img {
+    background-image: url('../imagenes/headerblur.jpg');
     background-size: cover;
     background-position-y: center;
     background-attachment: fixed;
-    height: 700px;
+    padding: 50px;
 
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+     h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 55px;
+        font-family: 'Satisfy', cursive;
+        color: rgb(185, 78, 137);
+     
+     }
+   
+     p {
+        font-size: 23px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+     }
 }
 
-.logo {
-    max-width: 300px;
-    max-height: 100px;
+.header-img-dos {
+    background-image: url('../imagenes/contactofondo.png');
+    background-size: contain;
+    background-position-y: center;
+    background-attachment: fixed;
+    padding: 50px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-family: 'Mulish', sans-serif;
+    align-items: center;
+    text-align: center;
+    color: $color-secondary;
+    font-size: 42px;
+
 }
 
 nav {
-    p {
-        margin-top: 0;
-        margin-bottom: 1000px;
-        padding: 0;
-        font-family: 'Quattrocento Sans', sans-serif;
-        font-size: 14px;
-        color: white;
-    }
-
     img {
-        max-width: 320px;
-        max-height: 200px;
+        max-width: 110px;
+        max-height: 100px;
         padding: 0px;
-        margin-left: $spacing*2 !important;
+        margin-top: 10px;
+        margin-left: $spacing*10 !important;
     }
     ul {
-        margin-left: 400px;
+       margin-left: 300px;
 
         li {
-            font-size: 23px;
-            margin-top: $spacing*2;
-            padding: $spacing*3;
-            font-family: 'Mulish', sans-serif !important;
+            font-size: 19px;
+            margin-top: $spacing*3;
+            padding: $spacing*2;
+            font-family: 'Poppins', sans-serif;
         }
     }
 }
 
 
-.navegador-dos {
-    height: 500px;
-    background-image: url('../imagenes/contactofondo.png');
-    background-position: center;
 
-    img {
-        max-width: 260px;
-        max-height: 160px;
-        padding: 0px;
-    
-    }
-
-    div {
-        ul {
-            li {
-                margin-top: $spacing*8;
-            
-            }
-        }
-    }
-}
-
-
-.navegador-tres {
-    display: flex;
-    justify-content: space-between;
-    height: 150px;
-    background-color: #ffffff;
-
-    img {
-        width: 260px;
-        height: 160px;
-        padding: 0px;
-        margin-left: $spacing*4;
-    }
-
-    div {
-        ul {
-            li {
-                margin-top: $spacing*12;
-                font-family: 'Mulish', sans-serif;
-            }
-        }
-    }
-}
-
-
-.navegador-dos {
-    div {
-        ul {
-            li 
-            a {
-                color: rgb(79, 79, 79);
-            }
-        }
-    }
-}
-.navegador-tres {
-    div {
-        ul {
-            li 
-            a {
-                color: rgb(79, 79, 79);
-            }
-        }
-    }
-}
 
