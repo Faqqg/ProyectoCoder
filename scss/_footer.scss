@@ -6,7 +6,7 @@ $spacing: 5px;
     max-width: 100%;
     background-color: rgb(44, 44, 44);
     margin-top: 120px;
-    padding: $spacing*20;
+    padding: 40px;
 
     p {
         font-family: 'Raleway', sans-serif;
@@ -14,14 +14,14 @@ $spacing: 5px;
         color: rgb(255, 255, 255);
         text-align: left;
         margin: 5px 0px;
-      
+
     }
 }
 
 .footer-row {
     display: flex;
     flex-direction: row;
-    
+
     h4 {
         font-size: 24px;
         text-align: left;
@@ -32,17 +32,24 @@ $spacing: 5px;
 }
 
 .form-control {
-    
+
     background-color: rgba(44, 44, 44, 0.231) !important;
     color: rgb(194, 194, 194);
 }
-.animation-footer p a{
+
+.animation-footer p a {
     transition: color 0.3s;
     text-decoration: none;
     color: white;
 }
+
 .animation-footer p a:hover {
     color: rgb(130, 130, 130);
+}
+
+.redes-footer {
+    margin-right: 50px;
+    margin-left: 0px;
 }
 
 .redes-footer a img {
@@ -50,9 +57,10 @@ $spacing: 5px;
     height: 45px;
     color: white;
     padding: 7px;
-    margin-right: 62px;
+    margin-right: 20px;
     transition: transform 0.2s;
 }
+
 .redes-footer a img:hover {
     transform: scale(1.2);
 
@@ -107,7 +115,12 @@ $spacing: 5px;
         font-family: 'Quattrocento Sans', sans-serif;
         font-size: 20px;
         color: white;
-        padding: $spacing*2;
+        padding: 40px;
     }
 }
 
+.redes-footer-img {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
